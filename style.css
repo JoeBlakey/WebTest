@@ -68,6 +68,10 @@ body {
     color: black;
 }
 
+.app-nav img {
+    padding-top: .5rem;
+}
+
 .main-content {
     display: flex;
     flex-direction: column;
@@ -122,9 +126,6 @@ body {
     font-size: 40px;
 }
 
-#footer-logo {
-    display: none;
-}
 
 @media all and (max-width:1000px) {
     .app-nav ul {
@@ -134,9 +135,12 @@ body {
         flex: 1 1 50%;
         font-size: 2rem;
     }
-    /* .main-content{
-        margin-top: 30rem;
-    } */
+    .app-nav img {
+        padding-top: 2rem;
+    }
+    .main-content{
+        margin-top: 7rem;
+    }
     .main-content h1 {
         font-size: 1.3rem;
     }
@@ -151,10 +155,6 @@ body {
         display: block;
         padding: 2rem;
         font-size: 2rem;
-    }
-    #footer-logo {
-        display: block;
-        padding-left: 10%;
     }
 }
 @media all and (max-width:500px) {
