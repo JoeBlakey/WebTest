@@ -10,8 +10,8 @@ html {
 }
 
 body {
-    background: rgb(249,160,36);
-    background: linear-gradient(90deg, rgba(249,160,36,1) 0%, rgba(236,143,29,1) 41%, rgba(119,73,0,1) 100%) fixed;
+    background: rgb(249,138,34);
+    background: linear-gradient(0deg, rgba(249,138,34,1) 0%, rgba(253,174,45,1) 100%) fixed;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -124,24 +124,25 @@ body {
     }
     .app-nav li {
         flex: 1 1 50%;
+        font-size: 2rem;
     }
     .main-content{
-        margin-top: 20rem;
+        margin-top: 30rem;
     }
     .main-content h1 {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     .main-content p {
         padding: 20px 20px;
-        font-size: .9rem;
+        font-size: 1.2rem;
     }
     .ad {
         display: none;
     }
 }
 @media all and (max-width:500px) {
-    .app-nav li {
-        flex: 1 1 50%;
+    .app-nav {
+        display: none;
     }
 }
 
