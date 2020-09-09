@@ -110,7 +110,7 @@ body {
     margin: 2rem 0;
 }
 
-.contact img {
+#gas-register {
     height: auto;
     width: auto;
     max-height: calc(495px / 4);
@@ -120,6 +120,10 @@ body {
 
 .contact span{
     font-size: 40px;
+}
+
+#footer-logo {
+    display: none;
 }
 
 @media all and (max-width:1000px) {
@@ -147,6 +151,10 @@ body {
         display: block;
         padding: 2rem;
         font-size: 2rem;
+    }
+    #footer-logo {
+        display: block;
+        padding-left: 10%;
     }
 }
 @media all and (max-width:500px) {
