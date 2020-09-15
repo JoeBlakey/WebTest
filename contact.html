@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap">
+</head>
+<body>
+    <div class="nav-wrapper">
+        <nav class="app-nav">
+            <a href=#><img src="logo.png"></a>
+            <a href="#" class="toggleNav">☰ Menu</a>
+            <ul class="nav-list">
+                <li class="nav-item"><a href=#>Home</a></li>
+                <li class="nav-item"><a href=#>Offers</a></li>
+                <li class="nav-item"><a href=#>Payment Options</a></li>
+                <li class="nav-item"><a href="index.html">About Us</a></li>
+                <li class="nav-item"><a href=#>Other Servies</a></li>
+                <li class="nav-item"><a href=#>Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <form class="form-container">
+        <h1>Contact Us</h1>
+        <div class="form-wrapper">
+        <div id="forename-div">
+            <label for="forename">First Name:</label>
+            <input type="text" name="forename" id="forename">
+        </div>
+        <div id="surname-div">
+            <label for="surname">Last Name:</label>
+            <input type="text" name="surname" id="surname">
+        </div>
+        <div id="address-div">
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" cols="30" rows="3" ></textarea>
+        </div>
+        <div id="postcode-div">
+            <label for="postcode">Post Code:</label>
+            <input type="text" name="postcode" id="postcode">
+        </div>
+        <div id="email-div">
+            <label for="email">Email Address:</label>
+            <input type="text" name="email" id="email">
+        </div>
+        <div id="phone-div">
+            <label for="phone">Contact Telephone:</label>
+            <input type="text" name="phone" id="phone">
+        </div>
+        <div id="interest-div">
+            <label for="interest">Interested in:</label>
+            <select name="interest" id="interest">
+                <option value="0"></option>
+                <option value="1">Healthier Heating</option>
+                <option value="2">Boiler/Upgrade</option>
+                <option value="3">New Heating System</option>
+                <option value="4">Special Offers</option>
+                <option value="5">Fuel Switching Grants</option>
+                <option value="6">Over 60s Discount</option>
+                <option value="7">Breakdown Cover Plan</option>
+                <option value="8">Repairs/Servicing</option>
+                <option value="9">Solar Hot Water</option>
+            </select>
+        </div>
+        <div id="description-div">
+            <label for="description">Brief Description of Work:</label>
+            <textarea name="description" id="description" cols="30" rows="5" maxlength="400"></textarea>
+        </div >
+            <button id="submit">Submit</button>
+        </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+          
+          $(function() {
+            $('.toggleNav').on('click',function() {
+              $('.app-nav ul').slideToggle();
+            });
+          });
+        </script>
+</body>
+</html>
