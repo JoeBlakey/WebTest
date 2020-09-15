@@ -183,7 +183,7 @@ label {
     }
     .app-nav li {
         flex: 1 1 50%;
-        font-size: 2rem;
+        font-size: 1rem;
     }
     .app-nav img {
         padding-top: 2rem;
@@ -192,22 +192,30 @@ label {
         margin-top: 7rem;
     }
     .main-content h1 {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
     .main-content p {
         padding: 20px 20px;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .ad {
         display: none;
     }
     .toggleNav {
         display: block;
-        padding: 2rem;
-        font-size: 2rem;
+        padding: 1rem;
+        font-size: 1rem;
     }
     .form-container {
+        width: 95%;
+        height: 830px;
+    }
+    .form-wrapper {
+        display: inline;
+    }
+    #submit {
         width: 100%;
+        margin-top: 1rem;
     }
 }
 
