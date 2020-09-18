@@ -113,7 +113,6 @@ body {
 .contact {
     display: flex;
     padding-top: 1rem;
-    flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     margin: 2rem 0;
@@ -123,8 +122,8 @@ body {
     height: auto;
     width: auto;
     max-height: calc(495px / 4);
-    max-width: 110px;
-    padding-right: 10%;
+    min-width: 110px;
+    padding-right: 5%;
 }
 
 .contact span{
