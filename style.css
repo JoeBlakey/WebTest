@@ -2,6 +2,9 @@
     font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 html {
@@ -89,7 +92,8 @@ body {
 .main-content p {
     margin: auto;
     text-align: justify;
-    padding: 30px 25%;
+    padding: 30px 2rem;
+    max-width: 800px;
 }
 
 .ad {
@@ -130,8 +134,7 @@ body {
 .form-container {
     align-self: center;
     background: white;
-    width: 500px;
-    height: 600px;
+    max-width: 500px;
     margin-top: 3rem;
     box-shadow: 2px 2px 5px black;
     padding: 0.5rem;
