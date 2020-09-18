@@ -18,10 +18,13 @@ body {
     display: flex;
     flex-direction: column;
     align-content: center;
+    margin-top: 20vh;
 }
 
 .nav-wrapper {
+    position: absolute;
     margin: 0 auto;
+    top: 0;
     padding: 0;
     text-align: center;
     /* border: 1px solid black; */
@@ -36,6 +39,7 @@ body {
     position: fixed;
     width: 100%;
     right: 0;
+    top: 0;
     box-shadow: 1px 1px 2px rgb(255 255 255);
 }
 
@@ -48,11 +52,10 @@ body {
     /* border: 2px solid red; */
     margin: auto;
     list-style: none;
-    max-width: 60%;
+    max-width: 80%;
     align-items: center;
-    flex-wrap: wrap;
-
-}
+    justify-content: space-around;
+    }
 
 .app-nav li {
     display: flex;
@@ -181,7 +184,7 @@ label {
 }
 
 
-@media all and (max-width:500px) {
+@media all and (max-width:900px) {
     .app-nav ul {
         display: none;
     }
@@ -192,9 +195,14 @@ label {
     .app-nav img {
         padding-top: 2rem;
     }
-    .main-content{
-        margin-top: 7rem;
+    .toggleNav {
+        display: block;
+        padding: 1rem;
+        font-size: 1rem;
     }
+}
+
+@media all and (max-width:500px) {
     .main-content h1 {
         font-size: 1rem;
     }
@@ -202,14 +210,7 @@ label {
         padding: 20px 20px;
         font-size: 1rem;
     }
-    .ad {
-        display: none;
-    }
-    .toggleNav {
-        display: block;
-        padding: 1rem;
-        font-size: 1rem;
-    }
+    
     .form-container {
         width: 95%;
         height: 830px;
