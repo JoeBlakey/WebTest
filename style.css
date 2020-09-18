@@ -33,6 +33,7 @@ body {
     position: fixed;
     width: 100%;
     right: 0;
+    box-shadow: 1px 1px 2px rgb(255 255 255);
 }
 
 .toggleNav {
@@ -47,7 +48,7 @@ body {
     max-width: 60%;
     align-items: center;
     flex-wrap: wrap;
-    
+
 }
 
 .app-nav li {
@@ -134,6 +135,7 @@ body {
     margin-top: 3rem;
     box-shadow: 2px 2px 5px black;
     padding: 0.5rem;
+    border-radius: 5px;
 }
 
 .form-container h1 {
@@ -160,7 +162,7 @@ body {
 .form-wrapper button {
     padding: 1rem;
     font-size: 1.2rem;
-    
+
 }
 
 textarea {
